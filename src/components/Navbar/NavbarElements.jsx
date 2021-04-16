@@ -56,15 +56,60 @@ export const Hamburger = styled.div `
     }
 `;
 
-/*
+export const NavMenu = styled.ul `
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+
+    @media screen and (max-width: 960px){
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 60vh;
+        position: absolute;
+        top: 70px;
+        left: ${({click}) => (click ? 0 : '-100%')};
+        opacity: 1;
+        transition: all 0.5 ease;
+        background:  rgb(0, 0, 0);
+        border-top: 2px solid #fff;
+        padding-top: 20px;
+    }
+`;
+
+export const NavItem = styled.li `
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    
+    span{
+        display: none;
+    }
+
+    @media screen and (max-width: 960px){
+        width: 100%;
+        span{
+            display: block;
+        }
+    }
+`;
+
 export const NavLink = styled(Link) `
     display: flex;
     text-decoration: none;
     color: #fff;
     cursor: pointer;
+    padding: 5px;
 
     &:hover {
         color: #f9c56a;
+        transition: all 0.2s ease;
+    }
+
+    @media screen and (max-width: 960px){
+        text-align: center;
+        padding: 10px;
     }
 `;
-*/
