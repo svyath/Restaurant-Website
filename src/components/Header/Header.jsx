@@ -25,7 +25,7 @@ function Header() {
                 <HeaderItems>
                     <HeaderLogo></HeaderLogo>
                     <HeaderH1>Delicious Food</HeaderH1>
-                    <HeaderH2>Tomato is a delitious restaurant website template</HeaderH2>
+                    <HeaderH2>Beyond the boundaries of taste</HeaderH2>
                     <HeaderLink>
                         <HeaderLinkImg></HeaderLinkImg>
                     </HeaderLink>

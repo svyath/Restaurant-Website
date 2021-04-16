@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import headerBackground from '../../images/header/1.jpg';
 import headerLogo from '../../images/logo.png';
 import headerLinkImg from '../../images/arrow-down.png';
 
@@ -28,9 +27,9 @@ export const HeaderBg = styled.div `
         top: 70px;
         width: 100%;
         height: 100%;
-        background-image: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgb(1, 1, 1) 100%);
-        background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgb(1, 1, 1) 100%);
-        background-image: -ms-linear-gradient(0deg, rgba(0, 0, 0.8) 0%, rgb(1, 1, 1) 100%);
+        background-image: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.9) 100%);
+        background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.9) 100%);
+        background-image: -ms-linear-gradient(0deg, rgba(0, 0, 0.7) 0%, rgba(0, 0, 0, 0.9) 100%);
         opacity: 0.8;
         z-index: 1;
     }
@@ -68,11 +67,13 @@ export const HeaderH1 = styled.h1 `
     text-transform: uppercase;
     padding-top: 20px;
     padding-bottom: 10px;
+    text-align: center;
 `;
 
 export const HeaderH2 = styled.h2 `
     font-size: 38px;
     font-weight: 300;
+    text-align: center;
 `;
 
 export const HeaderLink = styled.a `

@@ -4,7 +4,7 @@ import {Container} from '../../globalStyles';
 import {GrRestaurant} from 'react-icons/gr';
 
 export const Nav = styled.nav `
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.6);
     height: 70px;
     margin: 0;
     color: #fff;
@@ -12,6 +12,7 @@ export const Nav = styled.nav `
     justify-content: space-between;
     align-items: center;
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
     z-index: 999;
 `;
@@ -31,11 +32,13 @@ export const NavLogo = styled(Link) `
     align-items: center;
     cursor: poiner;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
 `;
 
 export const NavIcon = styled(GrRestaurant) `
     margin-right: 15px;
+    font-size: 2.5rem;
 
     path{
         stroke: #fff;
@@ -83,9 +86,16 @@ export const NavItem = styled.li `
     justify-content: center;
     align-items: center;
     height: 70px;
+    padding-right: 40px;
+    font-size: 15px;
+    font-weight: 500;
     
     span{
         display: none;
+    }
+
+    &:last-child{
+        padding-right: 0;
     }
 
     @media screen and (max-width: 960px){

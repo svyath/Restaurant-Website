@@ -1,6 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import { GlobalStyle } from '../../globalStyles';
+import About from '../About/About';
 import Header from '../Header/Header';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <>
         <GlobalStyle />
         <Header />
+        <About />
       </>  
     </Router>
   );
