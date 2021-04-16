@@ -68,6 +68,7 @@ export const NavMenu = styled.ul `
     @media screen and (max-width: 960px){
         display: flex;
         flex-direction: column;
+        justify-content: center;
         width: 100%;
         height: 60vh;
         position: absolute;
@@ -100,8 +101,13 @@ export const NavItem = styled.li `
 
     @media screen and (max-width: 960px){
         width: 100%;
+        
         span{
             display: block;
+        }
+
+        &:last-child{
+            padding-right: 40px;
         }
     }
 `;
@@ -116,6 +122,7 @@ export const NavLink = styled(Link) `
     &:hover {
         color: #f9c56a;
         transition: all 0.2s ease;
+        border-bottom: 2px solid #f9c56a;
     }
 
     @media screen and (max-width: 960px){
