@@ -5,13 +5,13 @@ import headerLinkImg from '../../images/arrow-down.png';
 
 export const HeaderContainer = styled.div`
     background: url(${headerBackground});
-    height: 720px;
+    height: 100vh;
     background-position: center;
     background-size: cover;
 `;
 
 export const HeaderContent = styled.div `
-    padding-top: 150px;
+    padding-top: 60px;
 `;
 
 export const HeaderItems = styled.div `
@@ -32,6 +32,8 @@ export const HeaderH1 = styled.h1 `
     font-size: 70px;
     font-weight: 900;
     text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 10px;
 `;
 
 export const HeaderH2 = styled.h2 `
@@ -41,6 +43,8 @@ export const HeaderH2 = styled.h2 `
 
 export const HeaderLink = styled.a `
     cursor: pointer;
+    padding-top: 40px;
+    padding-bottom: 20px;
 `;
 
 export const HeaderLinkImg = styled.img.attrs({

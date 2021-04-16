@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../Navbar';
+import Navbar from '../Navbar/Navbar';
 import {HeaderContainer, HeaderContent, HeaderItems, HeaderLogo, HeaderH1, HeaderH2, HeaderLink, HeaderLinkImg} from './HeaderElements';
 
 function Header() {
@@ -9,7 +9,7 @@ function Header() {
             <HeaderContent>
                 <HeaderItems>
                     <HeaderLogo></HeaderLogo>
-                    <HeaderH1>Delicios Food</HeaderH1>
+                    <HeaderH1>Delicious Food</HeaderH1>
                     <HeaderH2>Tomato is a delitious restaurant website template</HeaderH2>
                     <HeaderLink>
                         <HeaderLinkImg></HeaderLinkImg>

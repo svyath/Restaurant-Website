@@ -1,7 +1,7 @@
 import React from 'react';
-import {BrowserRouter as Router} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import { GlobalStyle } from '../../globalStyles';
-import Header from '../Header';
+import Header from '../Header/Header';
 
 function App() {
   return (
