@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Restaurant-Website/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/Restaurant-Website/static/js/main.35442208.chunk.js",
+    "main.js.map": "/Restaurant-Website/static/js/main.35442208.chunk.js.map",
+    "runtime-main.js": "/Restaurant-Website/static/js/runtime-main.6f53664d.js",
+    "runtime-main.js.map": "/Restaurant-Website/static/js/runtime-main.6f53664d.js.map",
+    "static/js/2.ce4134c3.chunk.js": "/Restaurant-Website/static/js/2.ce4134c3.chunk.js",
+    "static/js/2.ce4134c3.chunk.js.map": "/Restaurant-Website/static/js/2.ce4134c3.chunk.js.map",
+    "index.html": "/Restaurant-Website/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/Restaurant-Website/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.ce4134c3.chunk.js.LICENSE.txt": "/Restaurant-Website/static/js/2.ce4134c3.chunk.js.LICENSE.txt",
+    "static/media/logo.572134dd.png": "/Restaurant-Website/static/media/logo.572134dd.png",
+    "static/media/thumb1.7498780e.png": "/Restaurant-Website/static/media/thumb1.7498780e.png",
+    "static/media/thumb2.e1c8e2ea.png": "/Restaurant-Website/static/media/thumb2.e1c8e2ea.png",
+    "static/media/video.b12c1d02.mp4": "/Restaurant-Website/static/media/video.b12c1d02.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6f53664d.js",
+    "static/js/2.ce4134c3.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.35442208.chunk.js"
+  ]
+}
