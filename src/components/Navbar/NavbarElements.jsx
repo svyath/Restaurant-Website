@@ -4,7 +4,7 @@ import {Container} from '../../globalStyles';
 import {GrRestaurant} from 'react-icons/gr';
 
 export const Nav = styled.nav `
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.8);
     height: 70px;
     margin: 0;
     color: #fff;

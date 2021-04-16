@@ -3,9 +3,8 @@ import headerLogo from '../../images/logo.png';
 import headerLinkImg from '../../images/arrow-down.png';
 
 export const HeaderContainer = styled.div`
-    min-height: 791px;
+    height: 100vh;
     position: relative;
-    margin-top: -70px;
     color: #fff;
 `;
 
@@ -45,7 +44,7 @@ export const VideoBg = styled.video `
 
 export const HeaderContent = styled.div `
     position: relative;
-    padding-top: 120px;
+    margin-top: 60px;
     z-index: 1;
 `;
 
