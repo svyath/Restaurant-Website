@@ -4,14 +4,50 @@ import headerLogo from '../../images/logo.png';
 import headerLinkImg from '../../images/arrow-down.png';
 
 export const HeaderContainer = styled.div`
-    background: url(${headerBackground});
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
+    min-height: 791px;
+    position: relative;
+    margin-top: -70px;
+    color: #fff;
+`;
+
+export const HeaderBg = styled.div `
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        background-image: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgb(1, 1, 1) 100%);
+        background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgb(1, 1, 1) 100%);
+        background-image: -ms-linear-gradient(0deg, rgba(0, 0, 0.8) 0%, rgb(1, 1, 1) 100%);
+        opacity: 0.8;
+        z-index: 1;
+    }
+`;
+
+export const VideoBg = styled.video `
+    width: 100%;
+    height: 100%;
+    --o-object-fit: cover;
+    object-fit: cover;
+    z-index: 0;
 `;
 
 export const HeaderContent = styled.div `
-    padding-top: 60px;
+    position: relative;
+    padding-top: 120px;
+    z-index: 1;
 `;
 
 export const HeaderItems = styled.div `
@@ -24,9 +60,7 @@ export const HeaderItems = styled.div `
 
 export const HeaderLogo = styled.img.attrs({
     src: `${headerLogo}`
-}) `
-   
-`;
+}) ``;
 
 export const HeaderH1 = styled.h1 `
     font-size: 70px;
