@@ -76,7 +76,9 @@ export const HeaderH2 = styled.h2 `
     text-align: center;
 `;
 
-export const HeaderLink = styled.a `
+export const HeaderLink = styled.a.attrs(props =>({
+    href: '#about'
+}))`
     cursor: pointer;
     padding-top: 40px;
     padding-bottom: 20px;
