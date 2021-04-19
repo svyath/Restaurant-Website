@@ -44,11 +44,12 @@ export const VideoBg = styled.video `
 
 export const HeaderContent = styled.div `
     position: relative;
-    margin-top: 60px;
+    margin-top: -70px;
     z-index: 1;
 `;
 
 export const HeaderItems = styled.div `
+    margin-top: 15vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
