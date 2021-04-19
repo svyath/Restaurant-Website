@@ -3,6 +3,8 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import { GlobalStyle } from '../../globalStyles';
 import About from '../About/About';
 import Header from '../Header/Header';
+import TodSpecial from '../TodSpecial/TodSpecial';
+import './App.css';
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
         <GlobalStyle />
         <Header />
         <About />
+        <TodSpecial />
       </>  
     </Router>
   );

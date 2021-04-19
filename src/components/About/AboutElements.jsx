@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {Container, Line} from '../../globalStyles';
+import {Container} from '../../globalStyles';
 
 export const AboutContent = styled.div `
     background: #fff;

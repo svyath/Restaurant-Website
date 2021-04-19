@@ -12,6 +12,7 @@ import {
     AboutP, 
     AboutSign
 } from '../About/AboutElements'
+import {Line} from '../../globalStyles';
 import aboutImg1 from '../../images/thumb1.png';
 import aboutImg2 from '../../images/thumb2.png';
 import aboutSign from '../../images/signature.png';
@@ -23,7 +24,7 @@ function About() {
                 <AboutContainer>
                     <AboutH2>THE CHEF RESTAURANT</AboutH2>
                     <AboutH3>A little about us and a breif history of how we started</AboutH3>
-                    <AboutLine />
+                    <Line />
                     <AboutItems>
                         <AboutImgs>
                             <AImg src={aboutImg1} />

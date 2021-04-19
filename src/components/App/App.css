@@ -1,0 +1,27 @@
+.awssld__content {
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.awssld {
+    --slider-height-percentage: 42% !important;
+    --slider-transition-duration: 548ms !important;
+    --organic-arrow-thickness: 5px !important;
+    --organic-arrow-border-radius: 5px !important;
+    --organic-arrow-height: 40px !important;
+    --organic-arrow-color: #f9c56a !important;
+    --control-button-width: 8% !important;
+    --control-button-height: 29% !important;
+    --control-button-background: transparent !important;
+    --control-bullet-color: #fafafa !important;
+    --control-bullet-active-color: #d5d5d5 !important;
+    --loader-bar-color: #f9c56a !important;
+    --loader-bar-height: 5px !important;
+    --control-bullet-color: #f9c56a !important;
+    --control-bullet-active-color: #fff !important;
+    --content-background-color: #fff !important;
+    margin-right: 40px !important;
+}
