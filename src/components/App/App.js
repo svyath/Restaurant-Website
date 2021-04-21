@@ -10,10 +10,10 @@ function App() {
   return (
     <Router>
       <>
-        <GlobalStyle />
         <Header />
         <About />
         <TodSpecial />
+        <GlobalStyle />
       </>  
     </Router>
   );

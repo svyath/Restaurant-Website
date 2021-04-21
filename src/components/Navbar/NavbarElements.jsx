@@ -86,28 +86,38 @@ export const NavItem = styled.li `
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70px;
     padding-right: 40px;
     font-size: 15px;
     font-weight: 500;
     
-    span{
-        display: none;
-    }
-
     &:last-child{
         padding-right: 0;
+        
+        span:nth-of-type(1){
+            display: none;
+        }
+
+        span:nth-of-type(2){
+            position: relative;
+            top: -10px;
+            right: -5px;
+            background-color: #f9c56a;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 12px;
+            padding: 1px 3px;
+        }
     }
 
     @media screen and (max-width: 960px){
         width: 100%;
-        
-        span{
-            display: block;
-        }
 
         &:last-child{
             padding-right: 40px;
+
+            span:nth-of-type(1){
+                display: block;
+            }
         }
     }
 `;

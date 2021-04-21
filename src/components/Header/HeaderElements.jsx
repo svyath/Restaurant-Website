@@ -49,7 +49,7 @@ export const HeaderContent = styled.div `
 `;
 
 export const HeaderItems = styled.div `
-    margin-top: 15vh;
+    margin-top: 13vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

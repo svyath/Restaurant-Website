@@ -44,7 +44,7 @@ const Navbar = () => {
                         </NavItem>
                         <NavItem>
                             <NavLink to='/cart'>
-                                <span>CART</span><FaShoppingCart />
+                                <span>CART</span><FaShoppingCart /><span>0</span>
                             </NavLink>
                         </NavItem>
                     </NavMenu>
