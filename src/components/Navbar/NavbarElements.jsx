@@ -105,7 +105,7 @@ export const NavItem = styled.li `
             border-radius: 50%;
             color: #fff;
             font-size: 12px;
-            padding: 1px 3px;
+            padding: 1px 4px;
         }
     }
 

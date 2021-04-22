@@ -4,18 +4,23 @@ import { GlobalStyle } from '../../globalStyles';
 import About from '../About/About';
 import Header from '../Header/Header';
 import TodSpecial from '../TodSpecial/TodSpecial';
+import Section from '../../pages/Section/Section'
+import DataProvider from '../Context/Context';
 import './App.css';
 
 function App() {
   return (
-    <Router>
+    <DataProvider>
       <>
-        <Header />
-        <About />
-        <TodSpecial />
-        <GlobalStyle />
+        <Router>
+          <Header />
+          <About />
+          <TodSpecial />
+          <Section />
+          <GlobalStyle />
+        </Router>
       </>  
-    </Router>
+    </DataProvider>
   );
 }
 
