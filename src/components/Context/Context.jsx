@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import img from '../../images/context/context_1.jpg';
 
 export const DataContext = React.createContext();
 
@@ -41,7 +40,7 @@ export default class DataProvider extends Component {
             {
                 "id": "5",
                 "title": "Laksa",
-                "src": "https://loveincorporated.blob.core.windows.net/contentimages/gallery/88f787f4-40c9-4084-92f1-5df6dc94fb72-french-onion-soup.jpg",
+                "src": "https://loveincorporated.blob.core.windows.net/contentimages/gallery/c2b905dc-b93e-4be5-a461-a35c86a69d22-malaysian-laksa.jpg",
                 "description": "A spicy, sweet, sour and fragrant soup from Southeast Asia, laksa is mostly associated with Malaysia. ",
                 "price": "7$",
                 "count": 1
