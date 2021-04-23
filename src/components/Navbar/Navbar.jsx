@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {Component} from 'react';
 import {
     Nav, 
     NavContainer, 
@@ -10,23 +10,36 @@ import {
     NavLink
 } from './NavbarElements';
 import {FaTimes, FaBars, FaShoppingCart} from 'react-icons/fa';
+import {DataContext} from '../../components/Context/Context';
 
-const Navbar = () => {
-    const [click, setClick] = useState(false);
-    const handleClick = () => setClick(!click);
+class Navbar extends Component {
+    static contextType = DataContext;
 
-    return (
-        <>
+    state = {
+        toggle: false
+    }
+
+    menuToggle = () =>{
+        this.setState({toggle: !this.state.toggle})
+    }
+
+
+    render() {
+        const {toggle} = this.state;
+        const {cart} = this.context;
+
+        return (
+            <>
             <Nav>
                 <NavContainer>
                     <NavLogo to='/'>
                         <NavIcon />
                         CHEF
                     </NavLogo>
-                    <Hamburger onClick={handleClick}>
-                        {click ? <FaTimes /> : <FaBars />}
+                    <Hamburger onClick={this.menuToggle}>
+                        {toggle ? <FaTimes /> : <FaBars />}
                     </Hamburger>
-                    <NavMenu onClick={handleClick} click={click}>
+                    <NavMenu onClick={this.menuToggle} toggle={toggle}>
                         <NavItem>
                             <NavLink to='/'>HOME</NavLink>
                         </NavItem>
@@ -44,14 +57,16 @@ const Navbar = () => {
                         </NavItem>
                         <NavItem>
                             <NavLink to='/cart'>
-                                <span>CART</span><FaShoppingCart /><span>0</span>
+                                <span>CART</span><FaShoppingCart /><span>{cart.length}</span>
                             </NavLink>
                         </NavItem>
                     </NavMenu>
                 </NavContainer>
             </Nav>
         </>
-    )
+        );
+    }
 }
 
 export default Navbar;
+

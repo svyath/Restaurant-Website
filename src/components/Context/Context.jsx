@@ -165,14 +165,24 @@ export default class DataProvider extends Component {
                 "price": "7$",
                 "count": 1
             },
-        ]
+        ],
+        cart: []
+    }
+
+    addToCart = (id) => {
+        const {food, cart} = this.state;
+        const data = food.filter(item =>{
+            return item.id === id
+        })
+        this.setState({cart: [...cart, ...data]})
     }
 
     render() {
-        const {food} = this.state;
+        const {food, cart} = this.state;
+        const {addToCart} = this;
 
         return (
-            <DataContext.Provider value={{food}}>
+            <DataContext.Provider value={{food, addToCart, cart}}>
                 {this.props.children}
             </DataContext.Provider>
         )
