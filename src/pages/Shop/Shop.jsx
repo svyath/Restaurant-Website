@@ -27,7 +27,7 @@ export default class Shop extends Component {
                                     <FoodImg src={shopItem.src} />
                                     <FoodH2>{shopItem.title}</FoodH2>
                                 </FoodLink>
-                                    <FoodP>{shopItem.price}</FoodP>
+                                    <FoodP>{shopItem.price}$</FoodP>
                                     <FoodBtn onClick = {() => this.context.addToCart(shopItem.id)}>ADD TO CART</FoodBtn>
                             </ShopItem>
                         ))

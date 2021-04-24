@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {DataContext} from '../../components/Context/Context';
 import {Container} from '../../globalStyles';
-import {Link} from 'react-router-dom';
 import {
     ItemContent,
     DetailsInfo,
