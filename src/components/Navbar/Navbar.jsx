@@ -39,7 +39,7 @@ class Navbar extends Component {
                     <Hamburger onClick={this.menuToggle}>
                         {toggle ? <FaTimes /> : <FaBars />}
                     </Hamburger>
-                    <NavMenu onClick={this.menuToggle} toggle={toggle}>
+                    <NavMenu  toggle={toggle} >
                         <NavItem>
                             <NavLink to='/'>HOME</NavLink>
                         </NavItem>

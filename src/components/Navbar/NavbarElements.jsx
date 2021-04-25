@@ -21,7 +21,7 @@ export const NavContainer = styled(Container) `
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    width: 100%;
     ${Container}
 `;
 
@@ -69,11 +69,12 @@ export const NavMenu = styled.ul `
         display: flex;
         flex-direction: column;
         justify-content: center;
+        max-width: 1170px;
         width: 100%;
         height: 60vh;
         position: absolute;
         top: 70px;
-        left: ${({click}) => (click ? 0 : '-100%')};
+        left: ${({toggle}) => (toggle ? 0 : '-100%')};
         opacity: 1;
         transition: all 0.5 ease;
         background:  rgb(0, 0, 0);
@@ -110,8 +111,6 @@ export const NavItem = styled.li `
     }
 
     @media screen and (max-width: 960px){
-        width: 100%;
-
         &:last-child{
             padding-right: 40px;
 

@@ -7,10 +7,10 @@ export default class DataProvider extends Component {
         food: [
             {
                 "id": "1",
-                "title": "Beef Wellington",
-                "src": "https://loveincorporated.blob.core.windows.net/contentimages/gallery/1a63ff95-171e-4052-ab24-ac4c1c1c58d6-beef-wellington.jpg",
-                "description": "A dish that's fallen out of favour and then become popular again more times than we can count, beef Wellington's origins are as unclear as its connection to Arthur Wellesley, 1st Duke of Wellington.",
-                "price": 40,
+                "title": "Bouillabaisse",
+                "src": "https://loveincorporated.blob.core.windows.net/contentimages/gallery/e015f7a7-0442-40a6-8c10-bf17baaabd7f-bouillabaisse.jpg",
+                "description": "Bouillabaisse is synonymous with the South of France, especially the port city of Marseille, and is a wonderful celebration of sea creatures caught just off the coast.",
+                "price": 15,
                 "count": 1
             },
             {
@@ -47,10 +47,10 @@ export default class DataProvider extends Component {
             },
             {
                 "id": "6",
-                "title": "Bouillabaisse",
-                "src": "https://loveincorporated.blob.core.windows.net/contentimages/gallery/e015f7a7-0442-40a6-8c10-bf17baaabd7f-bouillabaisse.jpg",
-                "description": "Bouillabaisse is synonymous with the South of France, especially the port city of Marseille, and is a wonderful celebration of sea creatures caught just off the coast.",
-                "price": 15,
+                "title": "Beef Wellington",
+                "src": "https://loveincorporated.blob.core.windows.net/contentimages/gallery/1a63ff95-171e-4052-ab24-ac4c1c1c58d6-beef-wellington.jpg",
+                "description": "A dish that's fallen out of favour and then become popular again more times than we can count, beef Wellington's origins are as unclear as its connection to Arthur Wellesley, 1st Duke of Wellington.",
+                "price": 40,
                 "count": 1
             },
             {

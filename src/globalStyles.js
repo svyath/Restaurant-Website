@@ -12,7 +12,6 @@ export const GlobalStyle = createGlobalStyle`
 export const Container = styled.div `
     z-index: 1;
     max-width: 1170px;
-    width: 100%;
     margin-right: 30px;
     margin-left: 30px;
     margin: 0 auto;

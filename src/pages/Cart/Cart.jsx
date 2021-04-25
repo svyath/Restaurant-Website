@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Container} from '../../globalStyles';
 import {DataContext} from '../../components/Context/Context';
+import Navbar from '../../components/Navbar/Navbar';
 import {
     ItemQuantity,
     DecreaseBtn,
@@ -27,10 +28,16 @@ class Cart extends Component {
     render() {
         const {cart, reduction, increase, deleteItem, total} = this.context;
         if(cart.length === 0){
-            return <h2>Cart is empty</h2>
+            return(
+                <>
+                <Navbar />
+                <h2>Cart is empty</h2>
+                </>
+            ) 
         }else{
             return (
                 <>
+                    <Navbar />
                     <Container>
                         <CartContent>
                             {

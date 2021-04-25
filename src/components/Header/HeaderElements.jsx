@@ -10,7 +10,7 @@ export const HeaderContainer = styled.div`
 
 export const HeaderBg = styled.div `
     position: absolute;
-    top: 0;
+    top: -94px;
     right: 0;
     bottom: 0;
     left: 0;
