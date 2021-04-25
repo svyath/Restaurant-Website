@@ -2,15 +2,6 @@ import React, { Component } from 'react';
 import {Container} from '../../globalStyles';
 import {DataContext} from '../../components/Context/Context';
 import {
-    ItemContent,
-    DetailsInfo,
-    DetailsImg,
-    DetailsContainer,
-    DetailsH2,
-    DetailsSpan,
-    DetailsP
-} from '../Details/DetailsElements.jsx';
-import {
     ItemQuantity,
     DecreaseBtn,
     CurrentQuantity,
@@ -18,7 +9,12 @@ import {
     DeleteBtn,
     Total,
     CheckoutLink,
-    TotalP
+    TotalP,
+    CartContent,
+    CartItemInfo,
+    CartItemImg,
+    CartItemH2,
+    CartItemSpan
 } from './CartElements.jsx';
 
 class Cart extends Component {
@@ -30,19 +26,19 @@ class Cart extends Component {
 
     render() {
         const {cart, reduction, increase, deleteItem, total} = this.context;
-
-        return (
-            <>
-                <Container>
-                    <ItemContent>
-                        {
-                            cart.map(item =>(
-                                <DetailsInfo key={item.id}>
-                                    <DetailsImg src={item.src} />
-                                    <DetailsContainer>
-                                        <DetailsH2>{item.title}</DetailsH2>
-                                        <DetailsSpan>{item.price * item.count}$</DetailsSpan>
-                                        <DetailsP>{item.description}</DetailsP>
+        if(cart.length === 0){
+            return <h2>Cart is empty</h2>
+        }else{
+            return (
+                <>
+                    <Container>
+                        <CartContent>
+                            {
+                                cart.map(item =>(
+                                    <CartItemInfo key={item.id}>
+                                        <CartItemImg src={item.src} />
+                                        <CartItemH2>{item.title}</CartItemH2>
+                                        <CartItemSpan>{item.price * item.count}$</CartItemSpan>
                                         <ItemQuantity>
                                             <DecreaseBtn onClick={() => reduction(item.id)}> - </DecreaseBtn>           
                                             <CurrentQuantity>
@@ -50,19 +46,20 @@ class Cart extends Component {
                                             </CurrentQuantity>                                          
                                             <IncreaseBtn onClick={() => increase(item.id)}> + </IncreaseBtn>
                                         </ItemQuantity>
-                                    </DetailsContainer>
-                                    <DeleteBtn onClick={() => deleteItem(item.id)}> X </DeleteBtn>
-                                </DetailsInfo>
-                            ))
-                        }
-                    </ItemContent>
-                    <Total>
-                        <CheckoutLink to='/checkout'>CHECKOUT</CheckoutLink>
-                        <TotalP>TOTAL: {total}$</TotalP>
-                    </Total>
-                </Container>
-            </>
-        );
+                                        <DeleteBtn onClick={() => deleteItem(item.id)}> X </DeleteBtn>
+                                    </CartItemInfo>
+                                    
+                                ))
+                            }
+                        </CartContent>
+                        <Total>
+                            <CheckoutLink to='/checkout'>CHECKOUT</CheckoutLink>
+                            <TotalP>TOTAL: {total}$</TotalP>
+                        </Total>
+                    </Container>
+                </>
+            );
+        }
     }
 }
 

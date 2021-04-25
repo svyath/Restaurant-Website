@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../Navbar/Navbar';
 import {
     HeaderContainer,
     HeaderBg,
@@ -17,7 +16,6 @@ import Video from '../../videos/video.mp4';
 function Header() {
     return (
         <HeaderContainer>
-            <Navbar />
             <HeaderBg>
                 <VideoBg src={Video} type="video/mp4" autoPlay loop muted playsInline/>
             </HeaderBg>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {DataContext} from '../../components/Context/Context';
+import Navbar from '../../components/Navbar/Navbar';
 import {Container} from '../../globalStyles';
 import {
     ShopContent,
@@ -18,6 +19,7 @@ export default class Shop extends Component {
         const {food} = this.context;
         return (
             <>
+            <Navbar />
             <Container>
                 <ShopContent id='shopItem'>
                     {

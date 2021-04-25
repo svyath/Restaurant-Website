@@ -13,9 +13,6 @@ function App() {
     <DataProvider>
       <>
         <Router>
-          <Header />
-          <About />
-          <TodSpecial />
           <Section />
           <GlobalStyle />
         </Router>
