@@ -4,7 +4,6 @@ import {
     AboutContainer, 
     AboutH2, 
     AboutH3,
-    AboutLine, 
     AboutItems, 
     AboutImgs, 
     AImg, 
