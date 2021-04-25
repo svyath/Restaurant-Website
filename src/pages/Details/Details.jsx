@@ -50,7 +50,7 @@ export default class Details extends Component {
                                         <DetailsH2>{item.title}</DetailsH2>
                                         <DetailsSpan>{item.price}$</DetailsSpan>
                                         <DetailsP>{item.description}</DetailsP>
-                                        <AddLink to="/cart">
+                                        <AddLink onClick = {() => this.context.addToCart(item.id)}>
                                             ADD TO CART
                                         </AddLink>
                                     </DetailsContainer>

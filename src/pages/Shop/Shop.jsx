@@ -36,7 +36,6 @@ export default class Shop extends Component {
                     }
                 </ShopContent>
             </Container>
-                
             </>
         )
     }

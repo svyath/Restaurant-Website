@@ -1,7 +1,8 @@
-import React from 'react'
+import React, {Component} from 'react'
 import {Line} from '../../globalStyles';
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
+import {DataContext} from '../../components/Context/Context';
 import {
     TodSpecialContent,
     TodSpecialContainer, 
@@ -19,16 +20,19 @@ import sliderImg1 from '../../images/slider/slider_img1.png';
 import sliderImg2 from '../../images/slider/slider_img2.png';
 import sliderImg3 from '../../images/slider/slider_img3.png';
 
-function TodSpecial() {
-    return (
-        <>
-            <TodSpecialContent>
+class TodSpecial extends Component {
+    static contextType = DataContext;
+
+    render() {
+        return (
+            <>
+                <TodSpecialContent>
                 <TodSpecialContainer>
                     <TodSpecialH2>TODAY’S SPECIALS</TodSpecialH2>
                     <TodSpecialH3>Come today and have this special dish by our chefs</TodSpecialH3>
                     <Line />      
                         <AwesomeSlider>
-                            <div>
+                            <>
                                 <SliderItem>
                                     <SliderImg src={sliderImg1} />
                                     <SliderContent>
@@ -45,12 +49,12 @@ function TodSpecial() {
                                         largely thanks to Gordon Ramsay who's made it one of his signature dishes.
                                         </SliderP>
                                         <SliderLink>
-                                            <SliderBtn>ADD TO CART</SliderBtn>
+                                            <SliderBtn onClick = {() => this.context.addToCart('6')}>ADD TO CART</SliderBtn>
                                         </SliderLink>
                                     </SliderContent>
                                 </SliderItem>
-                            </div>
-                            <div>
+                            </>
+                            <>
                                 <SliderItem>
                                     <SliderImg src={sliderImg2} />
                                         <SliderContent>
@@ -67,12 +71,12 @@ function TodSpecial() {
                                             spring onion and sweet bean sauce.
                                             </SliderP>
                                             <SliderLink>
-                                                <SliderBtn>ADD TO CART</SliderBtn>
+                                                <SliderBtn onClick = {() => this.context.addToCart('3')}>ADD TO CART</SliderBtn>
                                             </SliderLink>
                                     </SliderContent>   
                                 </SliderItem>
-                            </div>
-                            <div>
+                            </>
+                            <>
                                 <SliderItem>
                                     <SliderImg src={sliderImg3} />
                                     <SliderContent>
@@ -87,16 +91,18 @@ function TodSpecial() {
                                         a slaw and beans as well as potato salad, mac 'n' cheese, fried okra or green beans.
                                         </SliderP>
                                         <SliderLink>
-                                            <SliderBtn>ADD TO CART</SliderBtn>
+                                            <SliderBtn onClick = {() => this.context.addToCart('8')}>ADD TO CART</SliderBtn>
                                         </SliderLink>
                                     </SliderContent>
                                 </SliderItem>
-                            </div>
+                            </>
                         </AwesomeSlider>
                 </TodSpecialContainer>
             </TodSpecialContent>
-        </>
-    )
+            </>
+        );
+    }
 }
 
 export default TodSpecial;
+
