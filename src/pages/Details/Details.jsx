@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {DataContext} from '../../components/Context/Context';
+import Navbar from '../../components/Navbar/Navbar';
 import {Container} from '../../globalStyles';
 import {
     ItemContent,
@@ -38,6 +39,7 @@ export default class Details extends Component {
         const {foodItem} = this.state;
         return (
             <>
+                <Navbar />
                 <Container>
                     <ItemContent>
                         {
@@ -46,7 +48,7 @@ export default class Details extends Component {
                                     <DetailsImg src={item.src} />
                                     <DetailsContainer>
                                         <DetailsH2>{item.title}</DetailsH2>
-                                        <DetailsSpan>{item.price}</DetailsSpan>
+                                        <DetailsSpan>{item.price}$</DetailsSpan>
                                         <DetailsP>{item.description}</DetailsP>
                                         <AddLink to="/cart">
                                             ADD TO CART

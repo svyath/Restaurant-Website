@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import {Container} from '../../globalStyles';
+import {FaTimes} from 'react-icons/fa';
 import {DataContext} from '../../components/Context/Context';
 import Navbar from '../../components/Navbar/Navbar';
 import {
+    CartContainer,
     ItemQuantity,
     DecreaseBtn,
     CurrentQuantity,
@@ -15,7 +16,9 @@ import {
     CartItemInfo,
     CartItemImg,
     CartItemH2,
-    CartItemSpan
+    CartItemSpan,
+    CartHeader,
+    GridItem
 } from './CartElements.jsx';
 
 class Cart extends Component {
@@ -28,17 +31,24 @@ class Cart extends Component {
     render() {
         const {cart, reduction, increase, deleteItem, total} = this.context;
         if(cart.length === 0){
-            return(
+            return (
                 <>
                 <Navbar />
                 <h2>Cart is empty</h2>
                 </>
             ) 
-        }else{
+        }else {
             return (
                 <>
                     <Navbar />
-                    <Container>
+                    <CartContainer>
+                        <CartHeader>
+                            <GridItem></GridItem>
+                            <GridItem>PRODUCT</GridItem>
+                            <GridItem>PRICE</GridItem>
+                            <GridItem>QUANTITY</GridItem>
+                            <GridItem></GridItem>
+                        </CartHeader>
                         <CartContent>
                             {
                                 cart.map(item =>(
@@ -53,17 +63,17 @@ class Cart extends Component {
                                             </CurrentQuantity>                                          
                                             <IncreaseBtn onClick={() => increase(item.id)}> + </IncreaseBtn>
                                         </ItemQuantity>
-                                        <DeleteBtn onClick={() => deleteItem(item.id)}> X </DeleteBtn>
+                                        <DeleteBtn onClick={() => deleteItem(item.id)}> <FaTimes /> </DeleteBtn>
                                     </CartItemInfo>
                                     
                                 ))
                             }
                         </CartContent>
                         <Total>
-                            <CheckoutLink to='/checkout'>CHECKOUT</CheckoutLink>
                             <TotalP>TOTAL: {total}$</TotalP>
+                            <CheckoutLink to='/checkout'>CHECKOUT</CheckoutLink>
                         </Total>
-                    </Container>
+                    </CartContainer>
                 </>
             );
         }
