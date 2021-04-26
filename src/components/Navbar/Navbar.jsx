@@ -32,7 +32,7 @@ class Navbar extends Component {
             <>
             <Nav>
                 <NavContainer>
-                    <NavLogo to='/'>
+                    <NavLogo to='/Restaurant-Website'>
                         <NavIcon />
                         CHEF
                     </NavLogo>
@@ -41,7 +41,7 @@ class Navbar extends Component {
                     </Hamburger>
                     <NavMenu  toggle={toggle} >
                         <NavItem>
-                            <NavLink to='/'>HOME</NavLink>
+                            <NavLink to='/Restaurant-Website'>HOME</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink to='/menu'>MENU</NavLink>
