@@ -18,7 +18,11 @@ import {
     CartItemH2,
     CartItemSpan,
     CartHeader,
-    GridItem
+    GridItem,
+    NoItemsH2,
+    NoItemsP,
+    NoItemsLink,
+    NoItemsContainer
 } from './CartElements.jsx';
 
 class Cart extends Component {
@@ -34,7 +38,11 @@ class Cart extends Component {
             return (
                 <>
                 <Navbar />
-                <h2>Cart is empty</h2>
+                <NoItemsContainer>
+                    <NoItemsH2>Cart is empty</NoItemsH2>
+                    <NoItemsP>Please make your choise</NoItemsP>
+                    <NoItemsLink to='/shop'>Go to Shop</NoItemsLink>
+                </NoItemsContainer>
                 </>
             ) 
         }else {

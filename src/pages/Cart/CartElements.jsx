@@ -138,3 +138,50 @@ export const CartItemSpan = styled.span`
   font-weight: 500;
 `;
 
+export const NoItemsH2 = styled.h2`
+  text-align: center;
+  font-size: 36px;
+  font-weight: 900;
+  color: #4b4741;
+  margin-top: 60px;
+  padding: 20px 100px;
+  border: 1px solid black;
+  border-radius: 5px;
+`;
+
+export const NoItemsP = styled.p`
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #4b4741;
+  margin-top: 20px;
+`;
+
+export const NoItemsContainer = styled(Container)`
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  ${Container}
+`;
+
+export const NoItemsLink = styled(Link)`
+  text-decoration: none;
+  color: #000;
+  background-color: #f9c56a;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 25px;
+  border-radius: 3px;
+  margin-right: 30px;
+  margin-top: 20px;
+
+  &:hover{
+      transform: scale(1.08);
+      transition: linear 0.2s;
+  }
+`;
