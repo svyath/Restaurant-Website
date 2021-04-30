@@ -12,7 +12,7 @@ export default class DataProvider extends Component {
                 "description": "Bouillabaisse is synonymous with the South of France, especially the port city of Marseille, and is a wonderful celebration of sea creatures caught just off the coast.",
                 "price": 15,
                 "count": 1,
-                "category": ""
+                "category": "first course"
             },
             {
                 "id": "2",
@@ -21,7 +21,7 @@ export default class DataProvider extends Component {
                 "description": "Very few dishes are as comforting as French onion soup – a blend of mellow, slowly cooked, caramelised onions in a broth laced with white wine and cognac.",
                 "price": 7,
                 "count": 1,
-                "category": ""
+                "category": "first course"
             },
             {
                 "id": "3",
@@ -30,7 +30,7 @@ export default class DataProvider extends Component {
                 "description": "A dish cooked and eaten in Beijing since the Imperial era, today Peking duck is a Chinese restaurant favourite across the world.",
                 "price": 10,
                 "count": 1,
-                "category": ""
+                "category": "second course"
             },
             {
                 "id": "4",
@@ -39,7 +39,7 @@ export default class DataProvider extends Component {
                 "description": "Claimed as one of their own throughout North Africa and the Middle East, untangling the web of where shakshuka is from is simply impossible.",
                 "price": 12,
                 "count": 1,
-                "category": ""
+                "category": "first course"
             },
             {
                 "id": "5",
@@ -48,7 +48,7 @@ export default class DataProvider extends Component {
                 "description": "A spicy, sweet, sour and fragrant soup from Southeast Asia, laksa is mostly associated with Malaysia. ",
                 "price": 8,
                 "count": 1,
-                "category": ""
+                "category": "first course"
             },
             {
                 "id": "6",
@@ -57,7 +57,7 @@ export default class DataProvider extends Component {
                 "description": "A dish that's fallen out of favour and then become popular again more times than we can count, beef Wellington's origins are as unclear as its connection to Arthur Wellesley, 1st Duke of Wellington.",
                 "price": 40,
                 "count": 1,
-                "category": ""
+                "category": "second course"
             },
             {
                 "id": "7",
@@ -66,7 +66,7 @@ export default class DataProvider extends Component {
                 "description": "Although often cooked as a meat sauce or stew across Europe and beyond, the traditional Hungarian goulash is actually a soup.",
                 "price": 14,
                 "count": 1,
-                "category": ""
+                "category": "second course"
             },
             {
                 "id": "8",
@@ -75,7 +75,7 @@ export default class DataProvider extends Component {
                 "description": "Other states along the so-called barbecue belt that include the Carolinas, Tennessee and Kentucky will have to forgive us, but Texan barbecue takes the spotlight.",
                 "price": 20,
                 "count": 1,
-                "category": ""
+                "category": "snack"
             },
             {
                 "id": "9",
@@ -84,7 +84,7 @@ export default class DataProvider extends Component {
                 "description": "A Japanese noodle soup, ramen has grown in popularity outside of Japan in the last decade and it's easy to see why.",
                 "price": 16,
                 "count": 1,
-                "category": ""
+                "category": "first course"
             },
             {
                 "id": "10",
@@ -93,7 +93,7 @@ export default class DataProvider extends Component {
                 "description": "You might think that there couldn't be anything easier than deep-frying a piece of chicken – but you'd be wrong to assume it's as simple as that.",
                 "price": 20,
                 "count": 1,
-                "category": ""
+                "category": "snack"
             },
             {
                 "id": "11",
@@ -102,7 +102,7 @@ export default class DataProvider extends Component {
                 "description": "This classic French dish might look rustic, but plenty of work and skill goes into making it just right. ",
                 "price": 25,
                 "count": 1,
-                "category": ""
+                "category": "second course"
             },
             {
                 "id": "12",
@@ -111,7 +111,7 @@ export default class DataProvider extends Component {
                 "description": "Barramundi is key to Australian cuisine and you'd be hard pressed to find a restaurant, a café or a fish and chip shop Down Under that doesn't have it on the menu.",
                 "price": 10,
                 "count": 1,
-                "category": ""
+                "category": "second course"
             },
             {
                 "id": "13",
@@ -120,7 +120,7 @@ export default class DataProvider extends Component {
                 "description": "Both the name of a cheese and a full dish, this is a traditional après-ski meal.",
                 "price": 30,
                 "count": 1,
-                "category": ""
+                "category": "second course"
             },
             {
                 "id": "14",
@@ -129,7 +129,7 @@ export default class DataProvider extends Component {
                 "description": "A celebration of spices and rice, biryani's origins lie with the Muslims of the Indian subcontinent.",
                 "price": 12,
                 "count": 1,
-                "category": ""
+                "category": "second course"
             },
             {
                 "id": "15",
@@ -138,7 +138,7 @@ export default class DataProvider extends Component {
                 "description": "The hamburger has its roots in Germany and is named after the city of Hamburg where, during the 19th century, local beef was ground and mixed with onions and garlic and then formed into patties.",
                 "price": 5,
                 "count": 1,
-                "category": ""
+                "category": "snack"
             },
             {
                 "id": "16",
@@ -147,7 +147,7 @@ export default class DataProvider extends Component {
                 "description": "These soft corn tortillas full of delicious beef, pork and chicken have mysterious origins that are often traced back to Mexico's 18th-century silver mines.",
                 "price": 8,
                 "count": 1,
-                "category": ""
+                "category": "snack"
             },
             {
                 "id": "17",
@@ -156,7 +156,7 @@ export default class DataProvider extends Component {
                 "description": "A dish commonly found across all Scandinavian and Baltic countries, this open-faced sandwich has its roots in Denmark.",
                 "price": 10,
                 "count": 1,
-                "category": ""
+                "category": "snack"
             },
             {
                 "id": "18",
@@ -165,7 +165,7 @@ export default class DataProvider extends Component {
                 "description": "The kebab has a long heritage (the name was first recorded as far back as the 14th century) and is thought to have originated in Turkey with soldiers cooking their freshly hunted meat over open fires.",
                 "price": 6,
                 "count": 1,
-                "category": ""
+                "category": "snack"
             },
             {
                 "id": "19",
@@ -174,7 +174,7 @@ export default class DataProvider extends Component {
                 "description": "This round, deep-fried patty of ground chickpeas, herbs, spices and onions makes for a tasty veggie treat.",
                 "price": 4,
                 "count": 1,
-                "category": ""
+                "category": "second course"
             },
             {
                 "id": "20",
@@ -183,7 +183,7 @@ export default class DataProvider extends Component {
                 "description": "The native Hawaiian diced raw fish dish, meaning 'to slice' in Hawaiian, has surged in popularity across the US in recent years, probably due to the appeal of its healthy, fresh ingredients.",
                 "price": 7,
                 "count": 1,
-                "category": ""
+                "category": "second course"
             },
             {
                 "id": "21",
@@ -192,7 +192,7 @@ export default class DataProvider extends Component {
                 "description": "This spicy, crunchy salad is the taste of Southeast Asia on a plate, made with shredded unripe green papaya and other local fruit and vegetables tossed in a delicious sweet and sour dressing of palm sugar, chilli peppers and lime juice.",
                 "price": 10,
                 "count": 1,
-                "category": ""
+                "category": "snack"
             },
             {
                 "id": "22",
@@ -201,7 +201,7 @@ export default class DataProvider extends Component {
                 "description": "A 19th-century invention by French chefs working for the Stroganovs (an influential Russian merchant family), beef stroganoff has become a staple in many homes in Eastern and Central Europe.",
                 "price": 6,
                 "count": 1,
-                "category": ""
+                "category": "second course"
             },
             {
                 "id": "23",
@@ -210,7 +210,7 @@ export default class DataProvider extends Component {
                 "description": "These doughy vessels – carrying cheese, butter and a runny egg in the centre – are as Georgian as it gets. ",
                 "price": 7,
                 "count": 1,
-                "category": ""
+                "category": "second course"
             },
             {
                 "id": "24",
@@ -219,7 +219,7 @@ export default class DataProvider extends Component {
                 "description": "A meal of small savoury and sweet dishes – mostly steamed and fried dumplings, buns and rolls – dim sum’s history is inextricably linked to the old Chinese tea houses. ",
                 "price": 15,
                 "count": 1,
-                "category": ""
+                "category": "second course"
             },
             {
                 "id": "25",
@@ -228,7 +228,7 @@ export default class DataProvider extends Component {
                 "description": "Most of us think sushi is all about the quality and freshness of the raw fish – but while that's no doubt important, it’s the rice that’s at the heart of the matter.",
                 "price": 20,
                 "count": 1,
-                "category": ""
+                "category": "snack"
             },
             {
                 "id": "26",
@@ -237,7 +237,7 @@ export default class DataProvider extends Component {
                 "description": "From the coast to the streets of Brussels, Belgians love sitting down to a lunch consisting of crispy, golden French fries and a big, steamy pot of mussels.",
                 "price": 16,
                 "count": 1,
-                "category": ""
+                "category": "snack"
             },
             {
                 "id": "27",
@@ -246,7 +246,7 @@ export default class DataProvider extends Component {
                 "description": "If ever a foodstuff needed no introduction it would be pizza. And if any pizza can lay claim to being the forebearer of an international obsession, it’s the pizza Napoletana hailing from Naples in Italy. ",
                 "price": 7,
                 "count": 1,
-                "category": ""
+                "category": "snack"
             },
             {
                 "id": "28",
@@ -255,7 +255,7 @@ export default class DataProvider extends Component {
                 "description": "A variety of fillings, both sweet and savoury, are wrapped in a thinly rolled dough and then pan-fried (or boiled, if sweet) to be served as a snack, first course or dessert.",
                 "price": 5,
                 "count": 1,
-                "category": ""
+                "category": "snack"
             },
             {
                 "id": "29",
@@ -264,7 +264,7 @@ export default class DataProvider extends Component {
                 "description": "A style of marinating meat native to Jamaica, jerk is made with allspice and Scotch bonnet peppers, and its name is believed to be Spanish, derived from the Peruvian word charqui, meaning dried strips of meat.",
                 "price": 8,
                 "count": 1,
-                "category": ""
+                "category": "snack"
             },
             {
                 "id": "30",
@@ -273,7 +273,7 @@ export default class DataProvider extends Component {
                 "description": "When you’ve found the perfect cosy pub or enjoyed a long stroll on a blustery British beach, nothing else will do. ",
                 "price": 10,
                 "count": 1,
-                "category": ""
+                "category": "snack"
             },
         ],
         cart: [],
