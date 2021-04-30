@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import {Container} from '../../globalStyles';
 
+
 export const MenuContainer =  styled(Container)`
     margin-bottom: 40px;
-    
+
     ${Container}
 `;
 
