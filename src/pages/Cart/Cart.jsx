@@ -41,7 +41,7 @@ class Cart extends Component {
                 <NoItemsContainer>
                     <NoItemsH2>Cart is empty</NoItemsH2>
                     <NoItemsP>Please make your choise</NoItemsP>
-                    <NoItemsLink to='/shop'>Go to Shop</NoItemsLink>
+                    <NoItemsLink to='/shop'>GO TO SHOP</NoItemsLink>
                 </NoItemsContainer>
                 </>
             ) 

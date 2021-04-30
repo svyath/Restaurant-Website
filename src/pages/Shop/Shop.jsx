@@ -21,7 +21,7 @@ export default class Shop extends Component {
             <>
             <Navbar />
             <Container>
-                <ShopContent id='shopItem'>
+                <ShopContent>
                     {
                         food.map(shopItem =>(
                             <ShopItem className="cart" key={shopItem.id}>
