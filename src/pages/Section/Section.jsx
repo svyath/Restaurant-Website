@@ -21,7 +21,7 @@ export default class Section extends Component {
                         <Route path='/cart' component={Cart} />
                         <Route path='/menu' component={Menu} />
                         <Route path='/reservation' component={Reservation} />
-                        <Route path='/contact' component={Contact} />
+                        <Route path='/contacts' component={Contact} />
                         <Route path='/checkout' component={Checkout} />
                     </Switch>
                 </Router>

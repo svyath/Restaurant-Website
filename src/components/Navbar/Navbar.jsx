@@ -53,7 +53,7 @@ class Navbar extends Component {
                             <NavLink to='/shop'>SHOP</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink to='/contact'>CONTACT</NavLink>
+                            <NavLink to='/contacts'>CONTACTS</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink to='/cart'>
