@@ -3,6 +3,6 @@ import {Container} from '../../globalStyles';
 
 export const ContactContainer = styled(Container)`
     text-align: center;
-    
+    height: 40vh;
     ${Container}
 `;

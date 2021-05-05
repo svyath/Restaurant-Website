@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {DataContext} from '../../components/Context/Context';
 import Navbar from '../../components/Navbar/Navbar';
+import Footer from '../../components/Footer/Footer';
 import {Container} from '../../globalStyles';
 import {
     ShopContent,
@@ -36,6 +37,7 @@ export default class Shop extends Component {
                     }
                 </ShopContent>
             </Container>
+            <Footer />
             </>
         )
     }

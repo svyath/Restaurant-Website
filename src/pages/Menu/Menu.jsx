@@ -15,6 +15,7 @@ import {
     FilterButtons
 } from './MenuElements';
 import ItemsList from './ItemsList';
+import Footer from '../../components/Footer/Footer';
 
 export default class Menu extends Component {
     static contextType = DataContext;
@@ -41,6 +42,7 @@ export default class Menu extends Component {
                     </FilterButtons>
                     <ItemsList />
                 </MenuContainer>
+                <Footer />
             </>
         )
     }

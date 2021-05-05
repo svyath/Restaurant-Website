@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Footer from '../../components/Footer/Footer';
 import Navbar from '../../components/Navbar/Navbar';
 import {
     ContactContainer
@@ -12,6 +13,7 @@ export default class Contact extends Component {
                 <ContactContainer>
                     <h2>Contact Page</h2>
                 </ContactContainer>
+                <Footer />
             </>
         )
     }

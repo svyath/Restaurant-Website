@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {FaTimes} from 'react-icons/fa';
 import {DataContext} from '../../components/Context/Context';
+import Footer from '../../components/Footer/Footer';
 import Navbar from '../../components/Navbar/Navbar';
 import {
     CartContainer,
@@ -43,6 +44,7 @@ class Cart extends Component {
                     <NoItemsP>Please make your choise</NoItemsP>
                     <NoItemsLink to='/shop'>GO TO SHOP</NoItemsLink>
                 </NoItemsContainer>
+                <Footer />
                 </>
             ) 
         }else {
@@ -82,6 +84,7 @@ class Cart extends Component {
                             <CheckoutLink to='/checkout'>CHECKOUT</CheckoutLink>
                         </Total>
                     </CartContainer>
+                    <Footer />
                 </>
             );
         }

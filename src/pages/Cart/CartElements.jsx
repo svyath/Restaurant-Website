@@ -4,7 +4,7 @@ import {Container} from '../../globalStyles';
 
 export const CartContainer = styled(Container)`
   max-width: 900px;
-
+  margin-bottom: 40px;
   ${Container}
 `;
 
@@ -103,9 +103,7 @@ export const TotalP = styled.p`
   margin-right: 30px;
 `;
 
-export const CartContent = styled.div`
-
-`;
+export const CartContent = styled.div``;
 
 export const CartItemInfo = styled.div`
     display: grid;
@@ -163,6 +161,7 @@ export const NoItemsContainer = styled(Container)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
   ${Container}
 `;
 

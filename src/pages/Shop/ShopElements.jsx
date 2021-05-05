@@ -5,6 +5,7 @@ export const ShopContent = styled.div`
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 40px;
 `;
 
 export const ShopItem = styled.div`
