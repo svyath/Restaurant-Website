@@ -11,15 +11,21 @@ import {
     FoodH2,
     FoodH3,
     FoodP,
-    FoodBtn
+    FoodBtn,
+    FilterButtons
 } from './MenuElements';
+import ItemsList from './ItemsList';
 
 export default class Menu extends Component {
     static contextType = DataContext;
 
+    handleBtns = (e) => {
+
+    }
+
     render() {
         const {food} = this.context;
-
+        
         return (
             <>
                 <Navbar />
@@ -27,17 +33,13 @@ export default class Menu extends Component {
                     <MenuH2>OUR MENU</MenuH2>
                     <MenuH3>A mouth-watering menu like never before</MenuH3>
                     <Line />
-                    <MenuContent>
-                    {
-                        food.map(item =>(
-                            <MenuItem className="cart" key={item.id}>
-                                <FoodH2>{item.title}</FoodH2>
-                                <FoodH3>{item.description}</FoodH3>
-                                <FoodP>~~~~~~ {item.price}$ ~~~~~~</FoodP>
-                            </MenuItem>
-                        ))
-                    }
-                    </MenuContent>
+                    <FilterButtons>
+                        <FoodBtn value='All' onClick = {() => this.context.handleBtns}>All</FoodBtn>
+                        <FoodBtn value='first course' onClick={this.context.handleBtns}>First Courses</FoodBtn>
+                        <FoodBtn value='second course' onClick={this.handleBtns}>Second Courses</FoodBtn>
+                        <FoodBtn value='snack' onClick={this.handleBtns}>Snaks</FoodBtn>
+                    </FilterButtons>
+                    <ItemsList />
                 </MenuContainer>
             </>
         )

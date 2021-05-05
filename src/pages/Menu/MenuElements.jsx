@@ -63,3 +63,5 @@ export const FoodP = styled.p`
 `;
 
 export const FoodBtn = styled.button``;
+
+export const FilterButtons = styled.div``;

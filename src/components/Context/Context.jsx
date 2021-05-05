@@ -277,6 +277,7 @@ export default class DataProvider extends Component {
             },
         ],
         cart: [],
+        menu: [],
         total: 0
     }
 
@@ -338,9 +339,11 @@ export default class DataProvider extends Component {
         this.setState({total: total});
     }
 
+    
+
     render() {
-        const {food, cart, total} = this.state;
-        const {addToCart, reduction, increase, deleteItem, getTotal} = this;
+        const {food, cart, total, menu} = this.state;
+        const {addToCart, reduction, increase, deleteItem, getTotal, filterBtns} = this;
 
         return (
             <DataContext.Provider value={{food, addToCart, cart, reduction, increase, deleteItem, total, getTotal}}>
