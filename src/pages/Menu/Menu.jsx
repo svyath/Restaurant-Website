@@ -39,12 +39,6 @@ export default class Menu extends Component {
                     <MenuH2>OUR MENU</MenuH2>
                     <MenuH3>A mouth-watering menu like never before</MenuH3>
                     <Line />
-                    <FilterButtons>
-                        <FoodBtn value='All' onClick = {() => this.context.handleBtns}>All</FoodBtn>
-                        <FoodBtn value='first course' onClick={this.context.handleBtns}>First Courses</FoodBtn>
-                        <FoodBtn value='second course' onClick={this.handleBtns}>Second Courses</FoodBtn>
-                        <FoodBtn value='snack' onClick={this.handleBtns}>Snaks</FoodBtn>
-                    </FilterButtons>
                     <ItemsList />
                 </MenuContainer>
                 <Footer />

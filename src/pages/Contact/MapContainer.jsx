@@ -30,7 +30,6 @@ export class MapContainer extends Component {
 
   render() {
     return (
-        <>
           <Map
           google={this.props.google}
           zoom={12}
@@ -51,7 +50,6 @@ export class MapContainer extends Component {
             </div>
         </InfoWindow>
         </Map>
-        </>
     );
   }
 }
@@ -60,7 +58,6 @@ const mapStyles = {
   position: 'relative !important',
   width: '100%',
   height: '60%',
- 
 };
 
 export default GoogleApiWrapper({

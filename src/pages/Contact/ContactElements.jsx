@@ -24,5 +24,5 @@ export const ContactHeader = styled.div`
 export const ContactLogo = styled(MainLogo)``;
 
 export const Devider = styled.div`
-    height: 450px;
+    height: 480px;
 `;

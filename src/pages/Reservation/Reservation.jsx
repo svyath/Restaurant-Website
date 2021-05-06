@@ -4,8 +4,11 @@ import Navbar from '../../components/Navbar/Navbar';
 import {
     ReservContainer,
     ReservationHeader,
-    ReservationLogo
+    ReservationLogo,
+    ReservationH2,
+    ReservationH3
 } from './ReservationElements.jsx';
+import {Line} from '../../globalStyles';
 
 export default class Reservation extends Component {
     render() {
@@ -16,7 +19,9 @@ export default class Reservation extends Component {
                     <ReservationLogo>- Chef Restaurant -</ReservationLogo>
                 </ReservationHeader>
                 <ReservContainer>
-                    <h2>Reservation Page</h2>
+                    <ReservationH2>RESERVATION</ReservationH2>
+                    <ReservationH3>Book a table online</ReservationH3>
+                    <Line />
                 </ReservContainer>
                 <Footer />
             </>

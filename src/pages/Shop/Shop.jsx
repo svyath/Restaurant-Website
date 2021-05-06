@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {DataContext} from '../../components/Context/Context';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
-import {Container} from '../../globalStyles';
+import {Container, Line} from '../../globalStyles';
 import {
     ShopContent,
     ShopItem,
@@ -12,7 +12,9 @@ import {
     FoodP,
     FoodBtn,
     ShopHeader,
-    ShopLogo
+    ShopLogo,
+    ShopH2,
+    ShopH3
 } from './ShopElements';
 
 export default class Shop extends Component {
@@ -27,6 +29,9 @@ export default class Shop extends Component {
                 <ShopLogo>- Chef Restaurant -</ShopLogo>
             </ShopHeader>
             <Container>
+                <ShopH2>OUR RANGE OF DISHES</ShopH2>
+                <ShopH3>Choose whatever you like</ShopH3>
+                <Line />
                 <ShopContent>
                     {
                         food.map(shopItem =>(

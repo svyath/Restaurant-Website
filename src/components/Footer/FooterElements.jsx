@@ -39,6 +39,7 @@ export const SocialBox = styled.div`
     display: flex;
     width: 200px;
     margin-bottom: 20px;
+    position: relative;
 `;
 
 export const SocialLink = styled.a`

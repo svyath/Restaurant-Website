@@ -9,7 +9,7 @@ export const SubscribeContainer = styled(Container)`
 `;
 
 export const SubscribeContent = styled.div`
-    padding: 40px 20px;
+    padding: 30px 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;

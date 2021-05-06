@@ -22,3 +22,16 @@ export const ReservationHeader = styled.div`
 `;
 
 export const ReservationLogo = styled(MainLogo)``;
+
+export const ReservationH2 = styled.h2`
+    font-size: 45px;
+    font-weight: 800;
+    color: #4b4741;
+    padding-top: 20px;
+`;
+
+export const ReservationH3 = styled.h3`
+    font-size: 26px;
+    font-weight: 300;
+    color: #4b4741;
+`;

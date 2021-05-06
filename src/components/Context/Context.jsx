@@ -319,16 +319,14 @@ export default class DataProvider extends Component {
     }
 
     deleteItem = id => {
-        if(window.confirm('Do u want to delete this item?')){
-            const {cart} = this.state;
-            cart.forEach((item, index) => {
-                if(item.id === id){
-                    cart.splice(index, 1)
-                }
+        const {cart} = this.state;
+        cart.forEach((item, index) => {
+            if(item.id === id){
+                cart.splice(index, 1)
+            }
         })
         this.setState({cart: cart});
         this.getTotal();
-        }
     }
 
     getTotal = () => {

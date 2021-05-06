@@ -23,7 +23,9 @@ export const ShopItem = styled.div`
     margin: 10px;
 
     &:hover{
-        box-shadow: none;
+        box-shadow: 4px 10px 15px #f9c56a;
+        transition: 0.2s linear;
+        transform: scale(1.04);
     }
 `;
 
@@ -89,3 +91,18 @@ export const ShopHeader = styled.div`
 `;
 
 export const ShopLogo = styled(MainLogo)``;
+
+export const ShopH2 = styled.h2 `
+    text-align: center;
+    font-size: 45px;
+    font-weight: 800;
+    color: #4b4741;
+    padding-top: 20px;
+`;
+
+export const ShopH3 = styled.h3 `
+    text-align: center;
+    font-size: 26px;
+    font-weight: 300;
+    color: #4b4741;
+`;
