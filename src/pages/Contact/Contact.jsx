@@ -4,8 +4,10 @@ import Navbar from '../../components/Navbar/Navbar';
 import {
     ContactContainer,
     ContactHeader,
-    ContactLogo
+    ContactLogo,
+    Devider
 } from './ContactElements.jsx';
+import MapContainer from './MapContainer';
 
 export default class Contact extends Component {
     render() {
@@ -16,10 +18,13 @@ export default class Contact extends Component {
                     <ContactLogo>- Chef Restaurant -</ContactLogo>
                 </ContactHeader>
                 <ContactContainer>
-                    <h2>Contact Page</h2>
+                    
                 </ContactContainer>
+                <MapContainer />
+                <Devider />
                 <Footer />
             </>
         )
     }
 }
+

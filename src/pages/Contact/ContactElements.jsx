@@ -4,7 +4,7 @@ import ContactHeaderBg from '../../images/rest7.jpg';
 
 export const ContactContainer = styled(Container)`
     text-align: center;
-    height: 40vh;
+   
     ${Container}
 `;
 
@@ -22,3 +22,7 @@ export const ContactHeader = styled.div`
 `;
 
 export const ContactLogo = styled(MainLogo)``;
+
+export const Devider = styled.div`
+    height: 450px;
+`;
