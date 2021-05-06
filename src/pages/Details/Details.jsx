@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {DataContext} from '../../components/Context/Context';
 import Footer from '../../components/Footer/Footer';
 import Navbar from '../../components/Navbar/Navbar';
-import {Container} from '../../globalStyles';
 import {
     ItemContent,
     DetailsInfo,
@@ -11,7 +10,10 @@ import {
     DetailsH2,
     DetailsSpan,
     DetailsP,
-    AddLink
+    AddLink,
+    DetailsHeader,
+    DetailsLogo,
+    DetailsWrapper
 } from './DetailsElements';
 
 export default class Details extends Component {
@@ -41,7 +43,10 @@ export default class Details extends Component {
         return (
             <>
                 <Navbar />
-                <Container>
+                <DetailsHeader>
+                    <DetailsLogo>- Chef Restaurant -</DetailsLogo>
+                </DetailsHeader>
+                <DetailsWrapper>
                     <ItemContent>
                         {
                             foodItem.map(item =>(
@@ -59,7 +64,7 @@ export default class Details extends Component {
                             ))
                         }
                     </ItemContent>
-                </Container>
+                </DetailsWrapper>
                 <Footer />
             </>
         )

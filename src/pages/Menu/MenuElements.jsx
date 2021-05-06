@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import {Container} from '../../globalStyles';
-
+import {Container, MainLogo} from '../../globalStyles';
+import MenuHeaderBg from '../../images/rest5.jpg';
 
 export const MenuContainer =  styled(Container)`
     margin-bottom: 40px;
@@ -13,7 +13,7 @@ export const MenuH2 = styled.h2 `
     font-size: 45px;
     font-weight: 800;
     color: #4b4741;
-    padding-top: 70px;
+    padding-top: 20px;
 `;
 
 export const MenuH3 = styled.h3 `
@@ -61,6 +61,21 @@ export const FoodP = styled.p`
     color: #f9c56a;
     margin-bottom: 10px;
 `;
+
+export const MenuHeader = styled.div`
+    height: 50vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(${MenuHeaderBg});
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: -70px;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
+export const MenuLogo = styled(MainLogo)``;
 
 export const FoodBtn = styled.button``;
 

@@ -23,7 +23,9 @@ import {
     NoItemsH2,
     NoItemsP,
     NoItemsLink,
-    NoItemsContainer
+    NoItemsContainer,
+    CartHeaderTop,
+    CartLogo
 } from './CartElements.jsx';
 
 class Cart extends Component {
@@ -39,6 +41,9 @@ class Cart extends Component {
             return (
                 <>
                 <Navbar />
+                <CartHeaderTop>
+                    <CartLogo>- Chef Restaurant -</CartLogo>
+                </CartHeaderTop>
                 <NoItemsContainer>
                     <NoItemsH2>Cart is empty</NoItemsH2>
                     <NoItemsP>Please make your choise</NoItemsP>
@@ -51,6 +56,9 @@ class Cart extends Component {
             return (
                 <>
                     <Navbar />
+                    <CartHeaderTop>
+                        <CartLogo>- Chef Restaurant -</CartLogo>
+                    </CartHeaderTop>
                     <CartContainer>
                         <CartHeader>
                             <GridItem></GridItem>

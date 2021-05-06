@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
-import {Container} from '../../globalStyles';
+import {Container, MainLogo} from '../../globalStyles';
+import CartHeaderBg from '../../images/rest8.jpg';
 
 export const CartContainer = styled(Container)`
   max-width: 900px;
@@ -17,7 +18,7 @@ export const CartHeader = styled.div`
   align-items: center;
   border: 1px solid;
   background-color: rgba(0, 0, 0, 0.9);
-  margin-top: 40px;
+  
 `;
 
 export const GridItem = styled.div`
@@ -141,7 +142,6 @@ export const NoItemsH2 = styled.h2`
   font-size: 36px;
   font-weight: 900;
   color: #4b4741;
-  margin-top: 60px;
   padding: 20px 100px;
   border: 1px solid black;
   border-radius: 5px;
@@ -161,7 +161,8 @@ export const NoItemsContainer = styled(Container)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+
   ${Container}
 `;
 
@@ -184,3 +185,18 @@ export const NoItemsLink = styled(Link)`
       transition: linear 0.2s;
   }
 `;
+
+export const CartHeaderTop = styled.div`
+    height: 50vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(${CartHeaderBg});
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: -70px;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
+export const CartLogo = styled(MainLogo)``;

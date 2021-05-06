@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import {Container} from '../../globalStyles';
-import FooterImage from '../../images/footer.png';
+import FooterImage from '../../images/rest4.jpg';
 
 export const FooterWrapper = styled.div`
     height: 50vh;

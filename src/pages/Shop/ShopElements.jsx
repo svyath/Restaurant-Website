@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
+import {MainLogo} from '../../globalStyles';
+import ShopHeaderBg from '../../images/rest1.jpg';
 
 export const ShopContent = styled.div`
     display: flex;
@@ -72,3 +74,18 @@ export const FoodBtn = styled.button`
         transition: linear 0.2s;
     }
 `;
+
+export const ShopHeader = styled.div`
+    height: 50vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(${ShopHeaderBg});
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: -70px;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
+export const ShopLogo = styled(MainLogo)``;

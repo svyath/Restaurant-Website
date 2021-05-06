@@ -4,6 +4,8 @@ import Navbar from '../../components/Navbar/Navbar';
 import {Line} from '../../globalStyles';
 import {
     MenuContainer,
+    MenuHeader,
+    MenuLogo,
     MenuH2,
     MenuH3,
     MenuContent,
@@ -30,6 +32,9 @@ export default class Menu extends Component {
         return (
             <>
                 <Navbar />
+                <MenuHeader>
+                    <MenuLogo>- Chef Restaurant -</MenuLogo>
+                </MenuHeader>
                 <MenuContainer>
                     <MenuH2>OUR MENU</MenuH2>
                     <MenuH3>A mouth-watering menu like never before</MenuH3>

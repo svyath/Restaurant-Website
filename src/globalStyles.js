@@ -30,3 +30,10 @@ export const Line = styled.div `
     margin-top: 20px;
     margin-bottom: 40px;
 `;
+
+export const MainLogo = styled.h1`
+    font-family: 'Dancing Script', cursive;
+    font-size: 72px;
+    color: rgba(255, 255, 255, 0.8);
+    z-index: 2;
+`;

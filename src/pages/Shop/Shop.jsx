@@ -10,7 +10,9 @@ import {
     FoodImg,
     FoodH2,
     FoodP,
-    FoodBtn
+    FoodBtn,
+    ShopHeader,
+    ShopLogo
 } from './ShopElements';
 
 export default class Shop extends Component {
@@ -21,6 +23,9 @@ export default class Shop extends Component {
         return (
             <>
             <Navbar />
+            <ShopHeader>
+                <ShopLogo>- Chef Restaurant -</ShopLogo>
+            </ShopHeader>
             <Container>
                 <ShopContent>
                     {
