@@ -27,6 +27,11 @@ export const ShopItem = styled.div`
         transition: 0.2s linear;
         transform: scale(1.04);
     }
+
+    &:hover h2 {
+        color: #f9c56a;
+        transition: 0.2s linear;
+    }
 `;
 
 export const FoodLink = styled(Link)`
@@ -47,10 +52,6 @@ export const FoodH2 = styled.h2`
     text-align: center;
     margin: 8px 0;
     font-weight: 800;
-
-    &:hover{
-        color: #f9c56a;
-    }
 `;
 
 export const FoodP = styled.p`

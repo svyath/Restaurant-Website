@@ -291,7 +291,7 @@ export default class DataProvider extends Component {
             })
             this.setState({cart: [...cart, ...data]})
         }else{
-            alert('The product has been aded to cart');
+            
         }
     }
 
