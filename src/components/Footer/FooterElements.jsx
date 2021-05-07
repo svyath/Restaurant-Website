@@ -110,6 +110,11 @@ export const DishItem = styled.div`
     &:hover{
         transform: scale(1.05);
         transition: 0.2s linear;
+        background-color: #343434;
+    }
+
+    &:hover  p{
+        color: #f9c56a;
     }
 `;
 
