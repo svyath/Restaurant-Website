@@ -1,19 +1,26 @@
 {
   "files": {
     "main.css": "/Restaurant-Website/static/css/main.8a553b37.chunk.css",
-    "main.js": "/Restaurant-Website/static/js/main.6fd06d11.chunk.js",
-    "main.js.map": "/Restaurant-Website/static/js/main.6fd06d11.chunk.js.map",
+    "main.js": "/Restaurant-Website/static/js/main.01a28433.chunk.js",
+    "main.js.map": "/Restaurant-Website/static/js/main.01a28433.chunk.js.map",
     "runtime-main.js": "/Restaurant-Website/static/js/runtime-main.6f53664d.js",
     "runtime-main.js.map": "/Restaurant-Website/static/js/runtime-main.6f53664d.js.map",
     "static/css/2.2046fe51.chunk.css": "/Restaurant-Website/static/css/2.2046fe51.chunk.css",
-    "static/js/2.1b36de8c.chunk.js": "/Restaurant-Website/static/js/2.1b36de8c.chunk.js",
-    "static/js/2.1b36de8c.chunk.js.map": "/Restaurant-Website/static/js/2.1b36de8c.chunk.js.map",
+    "static/js/2.a426c31a.chunk.js": "/Restaurant-Website/static/js/2.a426c31a.chunk.js",
+    "static/js/2.a426c31a.chunk.js.map": "/Restaurant-Website/static/js/2.a426c31a.chunk.js.map",
     "index.html": "/Restaurant-Website/index.html",
     "static/css/2.2046fe51.chunk.css.map": "/Restaurant-Website/static/css/2.2046fe51.chunk.css.map",
     "static/css/main.8a553b37.chunk.css.map": "/Restaurant-Website/static/css/main.8a553b37.chunk.css.map",
-    "static/js/2.1b36de8c.chunk.js.LICENSE.txt": "/Restaurant-Website/static/js/2.1b36de8c.chunk.js.LICENSE.txt",
-    "static/media/footer.372bd762.png": "/Restaurant-Website/static/media/footer.372bd762.png",
+    "static/js/2.a426c31a.chunk.js.LICENSE.txt": "/Restaurant-Website/static/js/2.a426c31a.chunk.js.LICENSE.txt",
     "static/media/logo.572134dd.png": "/Restaurant-Website/static/media/logo.572134dd.png",
+    "static/media/rest1.d8dbeaee.jpg": "/Restaurant-Website/static/media/rest1.d8dbeaee.jpg",
+    "static/media/rest3.1d668c6d.jpg": "/Restaurant-Website/static/media/rest3.1d668c6d.jpg",
+    "static/media/rest4.da0e1d3d.jpg": "/Restaurant-Website/static/media/rest4.da0e1d3d.jpg",
+    "static/media/rest5.5343e1b6.jpg": "/Restaurant-Website/static/media/rest5.5343e1b6.jpg",
+    "static/media/rest6.65f5bf3b.jpg": "/Restaurant-Website/static/media/rest6.65f5bf3b.jpg",
+    "static/media/rest7.da0e1d3d.jpg": "/Restaurant-Website/static/media/rest7.da0e1d3d.jpg",
+    "static/media/rest8.293d39f3.jpg": "/Restaurant-Website/static/media/rest8.293d39f3.jpg",
+    "static/media/rest9.23e94da4.jpg": "/Restaurant-Website/static/media/rest9.23e94da4.jpg",
     "static/media/slider_img1.f4019631.png": "/Restaurant-Website/static/media/slider_img1.f4019631.png",
     "static/media/slider_img2.569c9d97.png": "/Restaurant-Website/static/media/slider_img2.569c9d97.png",
     "static/media/slider_img3.5d63890c.png": "/Restaurant-Website/static/media/slider_img3.5d63890c.png",
@@ -25,8 +32,8 @@
   "entrypoints": [
     "static/js/runtime-main.6f53664d.js",
     "static/css/2.2046fe51.chunk.css",
-    "static/js/2.1b36de8c.chunk.js",
+    "static/js/2.a426c31a.chunk.js",
     "static/css/main.8a553b37.chunk.css",
-    "static/js/main.6fd06d11.chunk.js"
+    "static/js/main.01a28433.chunk.js"
   ]
 }
