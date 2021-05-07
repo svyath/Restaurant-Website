@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {Component} from 'react';
 import {
     FooterWrapper,
     FooterContainer,
@@ -12,8 +12,14 @@ import {
     Cellar,
     CellarSpan,
     CellarP,
-    FSpan
+    FSpan,
+    Dish,
+    DishImg,
+    DishItem,
+    DishP,
+    DishLink
 } from './FooterElements.jsx';
+import {DataContext} from '../../components/Context/Context';
 import {
     FaRegCopyright, 
     FaFacebook, 
@@ -26,10 +32,15 @@ import {
     FaPhone
 } from 'react-icons/fa';
 
-export default function Footer() {
-    return (
-        <>
-            <FooterWrapper>
+class Footer extends Component {
+    static contextType = DataContext;
+
+    render() {
+        const {food} = this.context;
+
+        return (
+            <>
+                <FooterWrapper>
                 <FooterContainer>
                     <FooterSection>
                         <FooterH3>ABOUT US</FooterH3>
@@ -41,7 +52,25 @@ export default function Footer() {
                         </FooterP>
                     </FooterSection>
                     <FooterSection>
-                        <FooterH3>DISHES OF THE WEAK</FooterH3>
+                        <FooterH3>DISHES OF THE WEEK</FooterH3>
+                        <Dish>
+                        {
+                            <>
+                                <DishItem>
+                                    <DishLink to={`/shop/${food[16].id}`}>
+                                        <DishImg src={food[16].src} />
+                                        <DishP>{food[16].title}</DishP>
+                                    </DishLink>
+                                </DishItem>
+                                <DishItem>
+                                    <DishLink to={`/shop/${food[17].id}`}>
+                                        <DishImg src={food[17].src} />
+                                        <DishP>{food[17].title}</DishP> 
+                                    </DishLink>
+                                </DishItem>
+                            </>
+                        }
+                        </Dish>
                     </FooterSection>
                     <FooterSection>
                         <FooterH3>REACH US</FooterH3>
@@ -63,6 +92,9 @@ export default function Footer() {
             <Cellar>
                 <CellarP><CellarSpan><FaRegCopyright /></CellarSpan> 2021 Chef Restaurant. All rights reserved.</CellarP>
             </Cellar>
-        </>
-    )
+            </>
+        );
+    }
 }
+
+export default Footer;

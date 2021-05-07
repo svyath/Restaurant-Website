@@ -73,6 +73,7 @@ export const SliderBtn = styled.button `
     background-color: #f9c56a;
     outline: none;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
     font-weight: 700;

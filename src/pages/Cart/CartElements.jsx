@@ -11,7 +11,7 @@ export const CartContainer = styled(Container)`
 
 export const CartHeader = styled.div`
   display: grid;
-  grid-template-columns: 255px 230px 130px 100px 50px;
+  grid-template-columns: 200px 250px 150px 100px 100px;
   height: 80px;
   grid-gap: 15px;
   justify-items: center;
@@ -108,7 +108,6 @@ export const CartContent = styled.div``;
 
 export const CartItemInfo = styled.div`
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
     grid-template-columns: 200px 250px 150px 100px 100px;
     grid-gap: 15px;
     justify-items: center;

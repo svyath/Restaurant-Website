@@ -35,7 +35,7 @@ export default class Shop extends Component {
                 <ShopContent>
                     {
                         food.map(shopItem =>(
-                            <ShopItem className="cart" key={shopItem.id}>
+                            <ShopItem key={shopItem.id}>
                                 <FoodLink to={`/shop/${shopItem.id}`}>
                                     <FoodImg src={shopItem.src} />
                                     <FoodH2>{shopItem.title}</FoodH2>

@@ -277,7 +277,6 @@ export default class DataProvider extends Component {
             },
         ],
         cart: [],
-        menu: [],
         total: 0
     }
 
@@ -296,7 +295,7 @@ export default class DataProvider extends Component {
         }
     }
 
-    reduction = id => {
+    reduction = (id) => {
         const {cart} = this.state;
         cart.forEach(item =>{
             if(item.id === id){
@@ -307,7 +306,7 @@ export default class DataProvider extends Component {
         this.getTotal();
     }
 
-    increase = id => {
+    increase = (id) => {
         const {cart} = this.state;
         cart.forEach(item =>{
             if(item.id === id){
@@ -318,7 +317,7 @@ export default class DataProvider extends Component {
         this.getTotal();
     }
 
-    deleteItem = id => {
+    deleteItem = (id) => {
         const {cart} = this.state;
         cart.forEach((item, index) => {
             if(item.id === id){
@@ -337,11 +336,9 @@ export default class DataProvider extends Component {
         this.setState({total: total});
     }
 
-    
-
     render() {
-        const {food, cart, total, menu} = this.state;
-        const {addToCart, reduction, increase, deleteItem, getTotal, filterBtns} = this;
+        const {food, cart, total} = this.state;
+        const {addToCart, reduction, increase, deleteItem, getTotal} = this;
 
         return (
             <DataContext.Provider value={{food, addToCart, cart, reduction, increase, deleteItem, total, getTotal}}>

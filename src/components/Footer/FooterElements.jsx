@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import {Container} from '../../globalStyles';
 import FooterImage from '../../images/rest4.jpg';
+import {Link} from 'react-router-dom';
 
 export const FooterWrapper = styled.div`
     height: 50vh;
@@ -34,7 +35,7 @@ export const FooterP = styled.p`
 `;
 
 export const SocialBox = styled.div`
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.8);
     padding: 6px 7px 7px 7px;
     display: flex;
     width: 200px;
@@ -47,6 +48,7 @@ export const SocialLink = styled.a`
     margin: 0 1px;
     color: #fff;
     background-color: #343434;
+    border-radius: 5px;
     width: 38px;
     display: inline-block;
     text-align: center;
@@ -90,4 +92,35 @@ export const CellarP = styled.p`
     display: flex;
     justify-content: center;
     align-items: center;
+`;
+
+export const Dish = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+`;
+
+export const DishItem = styled.div`
+    margin-bottom: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 10px 5px 10px;
+    border-radius: 5px;
+
+    &:hover{
+        transform: scale(1.05);
+        transition: 0.2s linear;
+    }
+`;
+
+export const DishP = styled.p`
+    color: #c2c2c2;
+`;
+
+export const DishImg = styled.img`
+    max-width: 135px;
+`;
+
+export const DishLink = styled(Link)`
+    text-decoration: none;
 `;
