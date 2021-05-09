@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
+import { toast, Zoom } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const DataContext = React.createContext();
+
+toast.configure();
 
 export default class DataProvider extends Component {
     state = {
@@ -291,7 +295,16 @@ export default class DataProvider extends Component {
             })
             this.setState({cart: [...cart, ...data]})
         }else{
-            
+            toast.warning('🥣 This dish is already in your cart', {
+                position: "top-center",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                progress: undefined,
+                transition: Zoom
+            });
         }
     }
 
