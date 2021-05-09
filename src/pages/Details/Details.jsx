@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {DataContext} from '../../components/Context/Context';
 import Footer from '../../components/Footer/Footer';
 import Navbar from '../../components/Navbar/Navbar';
+import Subscribe from '../../components/Subscribe/Subscribe';
 import {
     ItemContent,
     DetailsInfo,
@@ -65,6 +66,7 @@ export default class Details extends Component {
                         }
                     </ItemContent>
                 </DetailsWrapper>
+                <Subscribe />
                 <Footer />
             </>
         )

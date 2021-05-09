@@ -9,6 +9,7 @@ import {
     ReservationH3
 } from './ReservationElements.jsx';
 import {Line} from '../../globalStyles';
+import Subscribe from '../../components/Subscribe/Subscribe';
 
 export default class Reservation extends Component {
     render() {
@@ -23,6 +24,7 @@ export default class Reservation extends Component {
                     <ReservationH3>Book a table online</ReservationH3>
                     <Line />
                 </ReservContainer>
+                <Subscribe />
                 <Footer />
             </>
         )

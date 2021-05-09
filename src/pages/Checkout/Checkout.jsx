@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Footer from '../../components/Footer/Footer';
 import Navbar from '../../components/Navbar/Navbar';
+import Subscribe from '../../components/Subscribe/Subscribe';
 import {
     CheckoutContainer,
     CheckHeader,
@@ -18,6 +19,7 @@ export default class Checkout extends Component {
                 <CheckoutContainer>
                     <h2>Checkout Page</h2>
                 </CheckoutContainer>
+                <Subscribe />
                 <Footer />
             </>
         )

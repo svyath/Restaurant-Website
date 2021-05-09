@@ -18,6 +18,7 @@ import {
 } from './MenuElements';
 import ItemsList from './ItemsList';
 import Footer from '../../components/Footer/Footer';
+import Subscribe from '../../components/Subscribe/Subscribe';
 
 export default class Menu extends Component {
     static contextType = DataContext;
@@ -41,6 +42,7 @@ export default class Menu extends Component {
                     <Line />
                     <ItemsList />
                 </MenuContainer>
+                <Subscribe />
                 <Footer />
             </>
         )

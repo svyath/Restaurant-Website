@@ -16,6 +16,7 @@ import {
     ShopH2,
     ShopH3
 } from './ShopElements';
+import Subscribe from '../../components/Subscribe/Subscribe';
 
 export default class Shop extends Component {
     static contextType = DataContext;
@@ -47,6 +48,7 @@ export default class Shop extends Component {
                     }
                 </ShopContent>
             </Container>
+            <Subscribe />
             <Footer />
             </>
         )

@@ -3,6 +3,7 @@ import {FaTimes} from 'react-icons/fa';
 import {DataContext} from '../../components/Context/Context';
 import Footer from '../../components/Footer/Footer';
 import Navbar from '../../components/Navbar/Navbar';
+import Subscribe from '../../components/Subscribe/Subscribe';
 import {
     CartContainer,
     ItemQuantity,
@@ -49,6 +50,7 @@ class Cart extends Component {
                     <NoItemsP>Please make your choise</NoItemsP>
                     <NoItemsLink to='/shop'>GO TO SHOP</NoItemsLink>
                 </NoItemsContainer>
+                <Subscribe />
                 <Footer />
                 </>
             ) 
@@ -92,6 +94,7 @@ class Cart extends Component {
                             <CheckoutLink to='/checkout'>CHECKOUT</CheckoutLink>
                         </Total>
                     </CartContainer>
+                    <Subscribe />
                     <Footer />
                 </>
             );

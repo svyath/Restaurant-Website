@@ -22,7 +22,7 @@ function Header() {
             <HeaderContent>
                 <HeaderItems>
                     <HeaderLogo></HeaderLogo>
-                    <HeaderH1>Stand for something good</HeaderH1>
+                    <HeaderH1>Mouth-watering dishes</HeaderH1>
                     <HeaderH2>Beyond the boundaries of taste</HeaderH2>
                     <HeaderLink>
                         <HeaderLinkImg></HeaderLinkImg>
