@@ -296,7 +296,7 @@ export default class DataProvider extends Component {
             this.setState({cart: [...cart, ...data]})
         }else{
             toast.warning('🥣 This dish is already in your cart', {
-                position: "top-center",
+                position: "top-right",
                 autoClose: 3000,
                 hideProgressBar: false,
                 closeOnClick: true,

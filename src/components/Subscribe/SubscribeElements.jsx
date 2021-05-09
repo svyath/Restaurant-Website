@@ -9,9 +9,9 @@ export const SubscribeContainer = styled(Container)`
 `;
 
 export const SubscribeContent = styled.div`
-    padding: 30px 20px;
+    padding: 20px 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 `;
 
@@ -45,6 +45,3 @@ export const SubscribeBtn = styled.input`
     padding: 5px 10px;
 `;
 
-export const SubscribeForm = styled.form`
-    display: flex;
-`;
