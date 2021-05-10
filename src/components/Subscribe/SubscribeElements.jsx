@@ -27,21 +27,4 @@ export const SubscribeH3 = styled.h3`
     color: #7a7874;
 `;
 
-export const SubscribeInput = styled.input`
-    border: none;
-    outline: none;
-    width: 200px;
-    height: 30px;
-    padding: 5px 10px;
-`;
-
-export const SubscribeBtn = styled.input`
-    height: 40px;
-    cursor: pointer;
-    background-color: #eba732;
-    border: none;
-    font-size: 30px;
-    color: #fff;
-    padding: 5px 10px;
-`;
 

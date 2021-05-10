@@ -4,7 +4,8 @@ import RestHeaderBg from '../../images/rest3.jpg';
 
 export const ReservContainer = styled(Container)`
     text-align: center;
-    height: 40vh;
+    max-width: 800px;
+    margin-bottom: 120px;
     ${Container}
 `;
 

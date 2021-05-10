@@ -25,7 +25,6 @@ export default function Subscribe() {
                             <Formik
                                 initialValues={{ email: "" }}
                                 onSubmit={async values => {
-                                    
                                     toast.success('Subscription is successfull', {
                                         position: "top-right",
                                         autoClose: 3000,
