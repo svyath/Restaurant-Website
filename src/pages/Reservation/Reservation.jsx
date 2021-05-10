@@ -25,8 +25,30 @@ import PersonIcon from '@material-ui/icons/Person';
 import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
 import PeopleIcon from '@material-ui/icons/People';
 import PhoneEnabledIcon from '@material-ui/icons/PhoneEnabled';
-import { Formik } from "formik";
-import * as Yup from "yup";
+import { useFormik } from 'formik';
+import { toast, Zoom } from 'react-toastify';
+
+const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
+const validationSchema = yup.object({
+    email: yup
+      .string()
+      .email('Enter a valid email')
+      .required('Email is required'),
+    phone: yup
+      .string()
+      .matches(phoneRegExp, 'Phone number is not valid')
+      .required('Password is required'),
+    guests: yup
+      .number()
+      .positive()
+      .integer()
+      .required('Enter number of guests'),
+    name: yup
+      .string()
+      .required('Name is required')
+  });
+
+  
 
 function Reservation() {
     const currentDate = Date.now;
@@ -36,27 +58,30 @@ function Reservation() {
     const handleDateChange = (date) => {
         setSelectedDate(date);
     };
-    const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
 
-    const validationSchema = yup.object({
-        email: yup
-          .string()
-          .email('Enter a valid email')
-          .required('Email is required'),
-        phone: yup
-          .string()
-          .matches(phoneRegExp, 'Phone number is not valid')
-          .required('Password is required'),
-        guests: yup
-          .number()
-          .positive()
-          .integer()
-          .required('Required'),
-        name: yup
-          .string()
-          .required('Required')
+      const formik = useFormik({
+        initialValues: {
+          email: '',
+          name: '',
+          guests: '',
+          phone: '',
+
+        },
+        validationSchema: validationSchema,
+        onSubmit: (values) => {
+            toast.success('Reservation is successfull', {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                progress: undefined,
+                transition: Zoom
+            });
+        },
       });
-  
+    
     return (
         <>
             <Navbar />
@@ -68,6 +93,7 @@ function Reservation() {
                     <ReservationH3>Book a table online</ReservationH3>
                     <Line />
                     <>
+                    <form onSubmit={formik.handleSubmit} className="form">
                     <MuiPickersUtilsProvider utils={DateFnsUtils}>
                         <Grid container justify="space-around">
                             <KeyboardDatePicker
@@ -100,6 +126,9 @@ function Reservation() {
                                 variant="standard"
                                 color="primary"
                                 margin="normal"
+                                onChange={formik.handleChange}
+                                error={formik.touched.email && Boolean(formik.errors.email)}
+                                helperText={formik.touched.email && formik.errors.email}
                                 InputProps={{
                                 endAdornment: (
                                     <InputAdornment position="start">
@@ -116,6 +145,9 @@ function Reservation() {
                                 variant="standard"
                                 color="primary"
                                 margin="normal"
+                                onChange={formik.handleChange}
+                                error={formik.touched.name && Boolean(formik.errors.name)}
+                                helperText={formik.touched.name && formik.errors.name}
                                 InputProps={{
                                 endAdornment: (
                                     <InputAdornment position="start">
@@ -132,6 +164,9 @@ function Reservation() {
                                 variant="standard"
                                 color="primary"
                                 margin="normal"
+                                onChange={formik.handleChange}
+                                error={formik.touched.guests && Boolean(formik.errors.guests)}
+                                helperText={formik.touched.guests && formik.errors.guests}
                                 InputProps={{
                                 endAdornment: (
                                     <InputAdornment position="start">
@@ -148,6 +183,9 @@ function Reservation() {
                                 variant="standard"
                                 color="primary"
                                 margin="normal"
+                                onChange={formik.handleChange}
+                                error={formik.touched.phone && Boolean(formik.errors.phone)}
+                                helperText={formik.touched.phone && formik.errors.phone}
                                 InputProps={{
                                 endAdornment: (
                                     <InputAdornment position="start">
@@ -161,8 +199,9 @@ function Reservation() {
                             </button>
                         </Grid>
                     </MuiPickersUtilsProvider>
+                    </form>
                     </>
-                    <h2>You can also call: +1 224 6787 004 to make a reservation.</h2>
+                    <h2>You can also call: +(380) 26 58 190 44 to make a reservation.</h2>
                 </ReservContainer>
                 <Subscribe />
             <Footer />
