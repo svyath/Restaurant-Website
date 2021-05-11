@@ -26,3 +26,28 @@ export const ContactLogo = styled(MainLogo)``;
 export const Devider = styled.div`
     height: 480px;
 `;
+
+export const ContactH2 = styled.h2`
+    margin-bottom: 15px;
+    font-size: 36px;
+    font-weight: 800;
+    color: #4b4741;
+`;
+
+export const ContactP = styled.p`
+    font-size: 26px;
+    font-weight: 400;
+    color: #8f8d89;
+    margin-bottom: 10px;
+`;
+
+export const CSpan = styled.span`
+    color: #f9c56a;
+`;
+
+export const CItemWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+`;
