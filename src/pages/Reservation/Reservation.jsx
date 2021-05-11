@@ -194,14 +194,14 @@ function Reservation() {
                                 ),
                                 }}
                             />
-                            <button id="button" type="submit" >
+                            <button id="ReservButton" type="submit" >
                                MAKE RESERVATION
                             </button>
                         </Grid>
                     </MuiPickersUtilsProvider>
                     </form>
                     </>
-                    <h2>You can also call: +(380) 26 58 190 44 to make a reservation.</h2>
+                    <h2 id="Call">You can also call:<a href="tel:+(380) 26 58 190 44">+(380) 26 58 190 44</a> to make a reservation.</h2>
                 </ReservContainer>
                 <Subscribe />
             <Footer />
