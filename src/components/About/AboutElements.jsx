@@ -15,7 +15,7 @@ export const AboutH2 = styled.h2 `
     font-size: 45px;
     font-weight: 800;
     color: #4b4741;
-    margin-top: 70px;
+    margin-top: 20px;
 `;
 
 export const AboutH3 = styled.h3 `

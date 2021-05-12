@@ -19,7 +19,7 @@ import aboutSign from '../../images/signature.png';
 function About() {
     return (
         <>
-            <AboutContent id="about">
+            <AboutContent>
                 <AboutContainer>
                     <AboutH2>THE CHEF RESTAURANT</AboutH2>
                     <AboutH3>A little about us and a breif history of how we started</AboutH3>

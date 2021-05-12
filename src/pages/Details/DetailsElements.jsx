@@ -51,6 +51,7 @@ export const AddLink = styled(Link)`
     text-decoration: none;
     color: #000;
     background-color: #f9c56a;
+    border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
     font-weight: 700;
