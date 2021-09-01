@@ -6,8 +6,6 @@ class ItemsList extends Component {
     static contextType = DataContext;
 
     render() {
-        const {food} = this.context;
-
         return (
             <>
                 {

@@ -31,7 +31,6 @@ import {
     FaEnvelope, 
     FaPhone
 } from 'react-icons/fa';
-import { Redirect, Route, Switch } from "react-router";
 
 class Footer extends Component {
     static contextType = DataContext;

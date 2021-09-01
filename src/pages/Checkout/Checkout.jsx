@@ -12,13 +12,9 @@ import {
     PaymentContainer,
     PaymentBtn,
     PaymentItem,
-    OrderItem,
-    OrderSpan,
-    OrderP,
     PaymentCheck,
     PaymentLabel,
-    PaymentP,
-    PaymentForm
+    PaymentP
 } from './CheckoutElements.jsx';
 import { toast, Zoom } from 'react-toastify';
 import './Table.css';

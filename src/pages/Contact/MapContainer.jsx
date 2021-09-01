@@ -1,9 +1,5 @@
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import React, { Component } from 'react';
-import { GrBottomCorner } from 'react-icons/gr';
-import {
-  MapWrapper
-} from './ContactElements.jsx';
 
 export class MapContainer extends Component {
   state = {

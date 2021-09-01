@@ -7,14 +7,7 @@ import {
     MenuHeader,
     MenuLogo,
     MenuH2,
-    MenuH3,
-    MenuContent,
-    MenuItem,
-    FoodH2,
-    FoodH3,
-    FoodP,
-    FoodBtn,
-    FilterButtons
+    MenuH3
 } from './MenuElements';
 import ItemsList from './ItemsList';
 import Footer from '../../components/Footer/Footer';
@@ -23,13 +16,7 @@ import Subscribe from '../../components/Subscribe/Subscribe';
 export default class Menu extends Component {
     static contextType = DataContext;
 
-    handleBtns = (e) => {
-
-    }
-
     render() {
-        const {food} = this.context;
-        
         return (
             <>
                 <Navbar />
